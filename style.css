@@ -2,3 +2,47 @@ body{
     width: 85%;
     margin: auto;
 }
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0 10px 0 10px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li{
+    list-style: none;
+    padding-top: 20px;
+    width: 120px;
+    text-align: center;
+    /*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;*/
+    border-top: 2px solid transparent;
+}
+
+ul li:hover{
+    border-top: 2px solid rgb(0, 101, 252);
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover{
+    /*border-top: 2px solid rgb(0, 101, 252);*/
+    color: rgb(0, 101, 252);
+}
+
+header img{
+    height: 40px;
+}
+
