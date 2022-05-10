@@ -1,7 +1,77 @@
+@font-face {
+    font-family: 'raleway';
+    src: url(font/Raleway-VariableFont_wght.ttf);
+}
+
 body{
     width: 85%;
     margin: auto;
+    font-family: 'raleway';
 }
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*h1{
+    width: 90%;
+    font-size: 1em;
+    font-variation-settings: "wght" 800;
+    align-self: center;
+}*/
+
+.heading{
+    width: 100%;
+    font-size: 1em;
+    font-variation-settings: "wght" 800;
+    align-self: left;
+}
+
+/*.title h1{
+    width: 90%;
+    font-size: 2em;
+    font-variation-settings: "wght" 800;
+    align-self: center;
+}*/
+
+h2{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+h3{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+.rounded{
+    border-radius: 10%;
+}
+
+.rounded_top{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.rounded_left{
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+img{
+    border-radius: inherit;
+}
+
+/********* HEADER CI-DESSOUS *********/
 
 header{
     display: flex;
@@ -22,20 +92,23 @@ ul li{
     padding-top: 20px;
     width: 120px;
     text-align: center;
-    /*-webkit-box-sizing: border-box;
+    /*
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;*/
     border-top: 2px solid transparent;
-}
-
-ul li:hover{
-    border-top: 2px solid rgb(0, 101, 252);
 }
 
 ul li a{
     text-decoration: none;
     color: black;
 }
+
+ul li:hover{
+    border-top: 2px solid rgb(0, 101, 252);
+}
+
+/* Comment faire en sorte que le texte se colore au survol de ul li et pas de ul li a:hover ?*/
 
 ul li a:hover{
     /*border-top: 2px solid rgb(0, 101, 252);*/
@@ -44,5 +117,104 @@ ul li a:hover{
 
 header img{
     height: 40px;
+    object-fit: contain;
+    object-position: left;
 }
 
+
+
+/********* FILTRES CI-DESSOUS *********/
+
+#filtres{
+    width: 100%;
+}
+
+
+/********* MAIN CI-DESSOUS *********/
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.lodgings{
+    background-color: #F2F2F2;
+}
+
+#logements, #logements_populaires{
+    background-color: #F2F2F2;
+}
+
+#logements{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-evenly;*/
+    /*padding: 0 1em 0 1em;*/
+    /*align-items: center;*/
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+main h2, main h3{
+    padding-left: 10px;
+}
+
+.hebergement{
+    height: 30%;
+    width: 25%;
+    /*box-sizing: content-box;*/
+    padding: 5px;
+    background-color: white;
+}
+
+/*.hebergement h2, .hebergement h3{
+    padding-left: 10px;
+}*/
+
+#logements img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 55%;
+    /*border-top-left-radius: 10%;
+    border-top-right-radius: 10%;*/
+}
+
+#logements_populaires{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hebergement_populaire{
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+    width: 90%;
+    background-color: white;
+}
+
+.visuel_populaire{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+
+.visuel_populaire img{
+    object-position: 30% 10%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.texte_populaire{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
