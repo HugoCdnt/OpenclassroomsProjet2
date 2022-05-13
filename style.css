@@ -1,6 +1,5 @@
 /********* PARAMETRES GENERAUX DE LA PAGE CI-DESSOUS *********/
 
-
 @font-face {
     font-family: 'raleway';
     src: url(font/Raleway-VariableFont_wght.ttf);
@@ -20,26 +19,45 @@ img{
     box-sizing: border-box;
 }
 
+.heading{
+    display: flex;
+    flex-direction: inline;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    margin-top: 10px;
+}
+
 h1{
     font-size: 1.3em;
     font-variation-settings: "wght" 600;
+    margin-bottom: 0;
 }
 
 h2{
+    font-size: 1.2em;
+    font-variation-settings: "wght" 600;
+    /*width: 100%;*/
     text-decoration: none;
     color: black;
-    font-size: 0.8em;
-    margin: 5% 0 0 0;
-    padding-left: 10px;
-    font-variation-settings: "wght" 600;
+    /*margin-top: 30px;
+    padding-left: 35px;
+    height: 5%;*/
 }
 
 h3{
+    font-size: 0.9em;
+    font-variation-settings: "wght" 600;
     text-decoration: none;
     color: black;
-    font-size: 0.6em;
-    font-weight: normal;
-    margin: 2% 0 0 0;
+    margin: 5% 0 -5px 0;
     padding-left: 10px;
 }
 
@@ -64,6 +82,19 @@ a{
 /********* HEADER CI-DESSOUS *********/
 
 header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header img{
+    height: 40px;
+    object-fit: contain;
+    object-position: left;
+}
+
+#menu{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,12 +133,28 @@ ul li:hover{
     color: rgb(0, 101, 252);
 }*/
 
-header img{
-    height: 40px;
-    object-fit: contain;
-    object-position: left;
+#search_bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
 }
 
+#loc-pin{
+    height: 100%;
+}
+
+#search, #town{
+    margin: 0px -4px 0px 0px;
+    height: 100%;
+}
+
+form{
+    height: 30px;
+}
+
+/* Comment faire pour ne pas avoir de marge entre mon champ de recherche et mon bouton ?*/
 
 
 /********* FILTRES CI-DESSOUS *********/
@@ -126,22 +173,12 @@ main{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    height: 500px;
-}
-
-.heading{
-    width: 100%;
-    height: 10%;
-    font-size: 1em;
-    /*align-self: left;*/
-    margin-bottom: 15px;
-    /*padding-left: 37px;*/
-    padding-top: 15px;
+    height: 550px;
 }
 
 .lodgings{
     background-color: #F2F2F2;
-    height: 100%;
+    height: 500px;
     /*display: flex;
     flex-direction: column;
     justify-content: space-evenly;*/
@@ -174,8 +211,13 @@ main{
     align-items: center;
 }
 
+.lodgings-overlook p{
+    padding-left: 10px;
+    font-size: 0.8em;
+}
+
 .lodging-prev{
-    padding: 3px;
+    padding: 4px;
     background-color: white;
     display: flex;
     box-shadow: 1px 1px 15px lightgray;
@@ -209,8 +251,23 @@ main{
     width: 100%;
 }
 
-/*.texte_populaire{
-    width: 60%;
+.stars{
+    color: #0065FC;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#black_star{
+    display: flex;
+}
+
+.grey_star{
+    color: #d3d3d3;
+}
+
+.texte_populaire{
+    width: 55%;
     display: flex;
     flex-direction: column;
-}*/
+    padding-left: 5px;
+}
