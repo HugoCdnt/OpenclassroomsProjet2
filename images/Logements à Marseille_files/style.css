@@ -44,7 +44,7 @@ h1{
 h2{
     font-size: 1.2em;
     font-variation-settings: "wght" 600;
-    width: 100%;
+    /*width: 100%;*/
     text-decoration: none;
     color: black;
     /*margin-top: 30px;
@@ -137,29 +137,23 @@ ul li:hover{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 500px;
-    height: 35px;
-    /*border-style: none;*/
-}
-
-input, textarea, select{ 
-    font-family:inherit;
-    font-variation-settings: "wght" 600;
+    height: 30px;
+    border-style: none;
 }
 
 #loc-pin{
-    max-height: 100%;
-    width: 35px;
+    height: 100%;
+    width: 30px;
     background-color: #F2F2F2;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 form{
     height: 100%;
+    vertical-align: top;
+    justify-content: center;
 }
 
 form p{
@@ -172,18 +166,8 @@ input{
 }
 
 #search{
-    width: 100px;
     background-color: rgb(0, 101, 252);
     color: white;
-    margin-left: -4px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#town{
-    width: 175px;
-    padding-left: 10px;
-    color: black;
 }
 
 #loc-pin, #town{
@@ -195,59 +179,13 @@ input{
 }
 
 
-/* Comment faire pour ne pas avoir d'espace entre mon champ de recherche et mon bouton ?*/
+/* Comment faire pour ne pas avoir de marge entre mon champ de recherche et mon bouton ?*/
 
 
 /********* FILTRES CI-DESSOUS *********/
 
 #filtres{
-    width: 70%;
-}
-
-#buttons{
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-start;
-    align-items: center;
-    margin-top: 20px;
-}
-
-#buttons p{
-    margin: 0;
-    font-variation-settings: "wght" 600;
-}
-
-.filtre_btn{
-    display: flex;
-    flex-direction: row;
-    height: 35px;
-    align-items: center;
-    justify-content: start;
-    border-radius: 45px;
-    border: 2px solid lightgray;
-    background-color: white;
-    padding-left: 0px;
-    margin-left: 20px;
-}
-
-.filtre_btn p{
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'raleway';
-    font-variation-settings: "wght" 600;
-}
-
-.blue-picto{
-    display: flex;
-    height: 35px;
-    width: 35px;
-    margin-left: -2px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border: none;
-    border-radius: inherit;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 /********* MAIN CI-DESSOUS *********/
@@ -354,34 +292,4 @@ main{
     display: flex;
     flex-direction: column;
     padding-left: 5px;
-}
-
-
-
-/********* ACTIVITÉS CI-DESSOUS *********/
-
-#activities{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 500px;
-    width: 100%;
-}
-
-.activity-prev{
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-}
-
-.tall{
-    height: 90%;
-}
-
-.medium{
-    height: 45%;
-}
-
-.small{
-    height: 40%;
 }
