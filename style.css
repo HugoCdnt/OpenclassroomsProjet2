@@ -21,8 +21,8 @@ img{
 .heading{
     display: flex;
     flex-direction: inline;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 2em;
+    margin-bottom: 1.2em;
     height: 5%;
     justify-content: space-between;
     align-items: center;
@@ -30,14 +30,15 @@ img{
 
 p{
     margin-top: 0px;
-    margin-bottom: 10px;
     font-size: 0.9em;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 h1{
     font-size: 1.2em;
     font-variation-settings: "wght" 600;
-    margin-bottom: 10px;
+    margin-bottom: 0.8em;
 }
 
 h2{
@@ -52,8 +53,8 @@ h3{
     font-variation-settings: "wght" 600;
     text-decoration: none;
     color: black;
-    margin: 4% 0 5px 0;
-    padding-left: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 a{
@@ -97,8 +98,11 @@ header img{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 10px 0 10px;
+    padding-top: 8%;
 }
+
+
+/*** NAV CI-DESSOUS ***/
 
 ul{
     display: flex;
@@ -107,8 +111,8 @@ ul{
 
 ul li{
     list-style: none;
-    padding-top: 20px;
-    width: 150px;
+    padding-top: 2em;
+    width: 10em;
     text-align: center;
     border-top: 2px solid transparent;
 }
@@ -123,27 +127,23 @@ ul li a:hover{
 }
 
 ul li:hover{
-    padding-top: 20px;
+    padding-top: 2em;
     border-top: 2px solid rgb(0, 101, 252);
 }
 
 /* Comment faire en sorte que le texte se colore au survol de ul li et pas de ul li a:hover ?*/
 
-/*ul li a:hover{
-    /*border-top: 2px solid rgb(0, 101, 252);
-    color: rgb(0, 101, 252);
-}*/
 
-
+/*** BARRE DE RECHERCHE CI-DESSOUS ***/
 
 #search_bar{
-    margin-top: 15px;
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 500px;
-    height: 35px;
-    /*border-style: none;*/
+    /*width: 500px;*/
+    /*height: 35px;*/
+    height: 2.3em;
 }
 
 input, textarea, select{ 
@@ -152,8 +152,8 @@ input, textarea, select{
 }
 
 #loc-pin{
-    max-height: 100%;
-    width: 35px;
+    /*max-height: 100%;*/
+    width: 2.5em;
     background-color: #F2F2F2;
     display: flex;
     align-items: center;
@@ -176,7 +176,7 @@ input{
 }
 
 #search{
-    width: 100px;
+    width: 8em;
     background-color: rgb(0, 101, 252);
     color: white;
     margin-left: -4px;
@@ -184,8 +184,10 @@ input{
     border-bottom-right-radius: 10px;
 }
 
+/* Pourquoi mon bouton et mon champ de recherche ont un espace ?*/
+
 #town{
-    width: 175px;
+    width: 15em;
     padding-left: 10px;
     color: black;
 }
@@ -200,12 +202,11 @@ input{
 
 
 
-
 /********* FILTRES CI-DESSOUS *********/
 
 #filtres{
     width: 70%;
-    margin: 20px 0 20px 5px;
+    margin: 1.5em 0 1.5em 0.25em;
 }
 
 #buttons{
@@ -213,8 +214,8 @@ input{
     flex-direction: row;
     justify-items: flex-start;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 #buttons p{
@@ -226,27 +227,26 @@ input{
 .filtre_btn{
     display: flex;
     flex-direction: row;
-    height: 35px;
+    height: 2.8em;
     align-items: center;
     justify-content: start;
     border-radius: 45px;
     border: 2px solid lightgray;
     background-color: white;
     padding-left: 0px;
-    margin-left: 20px;
+    margin-left: 2em;
 }
 
 .filtre_btn p{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 1em 0 1em;
     font-family: 'raleway';
     font-variation-settings: "wght" 600;
 }
 
 .blue-picto{
     display: flex;
-    height: 35px;
-    width: 35px;
+    height: 2.8em;
+    width: 2.8em;
     margin-left: -2px;
     color: #0065FC;
     background-color: #DEEBFF;
@@ -273,7 +273,9 @@ input{
 
 
 
-/********* MAIN CI-DESSOUS *********/
+/********* LOGEMENTS CI-DESSOUS *********/
+
+/*** ÉLÉMENTS GÉNÉRAUX ***/
 
 main{
     display: flex;
@@ -283,50 +285,26 @@ main{
     height: 600px;
 }
 
+main .heading{
+    margin-top: 0;
+}
+
 .lodgings{
     background-color: #F2F2F2;
-    height: 550px;
-}
-
-#regular{
-    width: 66%;
-}
-
-#popular{
-    width: 31%;
+    height: 100%;
 }
 
 .container{
     width: 90%;
-    height: 100%;
-    margin:auto;
-}
-
-#popular .container{
-    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 2em;
 }
 
 .lodgings-overlook{
     display: flex;
     width: 100%;
-    height: 80%;
-}
-
-.wrap{
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.column{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.lodgings-overlook p{
-    padding-left: 10px;
-    font-size: 0.8em;
+    height: 100%;
 }
 
 .lodging-prev{
@@ -336,14 +314,84 @@ main{
     box-shadow: 1px 1px 15px lightgray;
 }
 
+.lodging-prev__text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.stars{
+    color: #0065FC;
+    /*padding-left: 10px;*/
+    /*padding-top: 10px;*/
+}
+
+.grey_star{
+    color: #d3d3d3;
+}
+
+
+/** ÉLÉMENTS SPÉCIFIQUES **/
+
+/* SECTION LOGEMENTS **/
+
+#general{
+    width: 66%;
+}
+
+#general .container{
+    margin-bottom: 2em;
+    height: 80%;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .square{
     height: 38%;
     width: 28%;
     flex-direction: column;
 }
 
-.square p{
-    margin-bottom: 2px;
+.lodging-prev.square img{
+    width: 100%;
+    height: 60%;
+}
+
+.regular{
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+#general a{
+    font-size: 0.9em;
+    vertical-align: top;
+    font-variation-settings: "wght" 700;
+    margin-left: 5%;
+}
+
+/* SECTION LOGEMENTS POPULAIRES **/
+
+#popular{
+    width: 31%;
+}
+
+#popular .container{
+    width: 80%;
+    height: 83%;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .rectangle{
@@ -352,40 +400,30 @@ main{
     flex-direction: row;
 }
 
-.lodging-prev.square img{
-    width: 100%;
-    height: 60%;
-}
-
 .lodging-prev.rectangle img{
     width: 40%;
     height: 100%;
 }
 
-.stars{
-    color: #0065FC;
-    padding-left: 10px;
-    /*padding-top: 10px;*/
+.popular{
+    width: 60%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-#popular .stars{
-    padding-top: 15px;
+.popular h3{
+    margin-bottom: 5%;
+}
+
+.popular .stars{
+    padding-top: 23%;
 }
 
 #black_star{
     display: flex;
 }
 
-.grey_star{
-    color: #d3d3d3;
-}
-
-.texte_populaire{
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 5px;
-}
 
 
 
@@ -393,7 +431,7 @@ main{
 
 #activities{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 #activities-overlook{
@@ -413,11 +451,11 @@ main{
 }
 
 .activity-prev img{
-    height: calc(100% - 40px);
+    height: calc(100% - 3em);
 }
 
 .activity-prev h3{
-    line-height: 40px;
+    line-height: 3em;
     margin: 0 0 0 0;
     vertical-align: middle;
     padding-left: 20px;
@@ -440,7 +478,7 @@ main{
 /********* FOOTER CI-DESSOUS *********/
 
 footer{
-    margin-top: 50px;
+    margin-top: 5%;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: inline;
@@ -457,7 +495,9 @@ footer{
 }
 
 .footer-overlook h3{
-    padding-bottom: 15px;
-    padding-left: 0;
-    margin: 0;
+    padding-bottom: 1em;
+}
+
+.footer-overlook p{
+    line-height: 2em;
 }

@@ -15,30 +15,30 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /*border-radius: inherit;*/
     box-sizing: border-box;
 }
 
 .heading{
     display: flex;
     flex-direction: inline;
-    width: 100%;
-    margin-top: 20px;
-    /*padding-left: 35px;
-    padding-right: 35px;*/
-    height: 15px;
+    margin-top: 2em;
+    margin-bottom: 1.2em;
+    height: 5%;
     justify-content: space-between;
     align-items: center;
 }
 
 p{
-    margin-top: 10px;
+    margin-top: 0px;
+    font-size: 0.9em;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 h1{
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-variation-settings: "wght" 600;
-    margin-bottom: 0;
+    margin-bottom: 0.8em;
 }
 
 h2{
@@ -46,9 +46,6 @@ h2{
     font-variation-settings: "wght" 600;
     text-decoration: none;
     color: black;
-    /*margin-top: 30px;
-    padding-left: 35px;
-    height: 5%;*/
 }
 
 h3{
@@ -56,12 +53,13 @@ h3{
     font-variation-settings: "wght" 600;
     text-decoration: none;
     color: black;
-    margin: 5% 0 -5px 0;
-    padding-left: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 .rounded{
@@ -77,6 +75,8 @@ a{
     border-top-left-radius: 19px;
     border-bottom-left-radius: 19px;
 }
+
+
 
 /********* HEADER CI-DESSOUS *********/
 
@@ -98,8 +98,11 @@ header img{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 100px 10px 0 10px;
+    padding-top: 8%;
 }
+
+
+/*** NAV CI-DESSOUS ***/
 
 ul{
     display: flex;
@@ -108,8 +111,8 @@ ul{
 
 ul li{
     list-style: none;
-    padding-top: 20px;
-    width: 150px;
+    padding-top: 2em;
+    width: 10em;
     text-align: center;
     border-top: 2px solid transparent;
 }
@@ -119,26 +122,28 @@ ul li a{
     color: black;
 }
 
-ul li:hover{
-    padding-top: 20px;
-    border-top: 2px solid rgb(0, 101, 252);
+ul li a:hover{
     color: rgb(0, 101, 252);
+}
+
+ul li:hover{
+    padding-top: 2em;
+    border-top: 2px solid rgb(0, 101, 252);
 }
 
 /* Comment faire en sorte que le texte se colore au survol de ul li et pas de ul li a:hover ?*/
 
-/*ul li a:hover{
-    /*border-top: 2px solid rgb(0, 101, 252);
-    color: rgb(0, 101, 252);
-}*/
+
+/*** BARRE DE RECHERCHE CI-DESSOUS ***/
 
 #search_bar{
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 500px;
-    height: 35px;
-    /*border-style: none;*/
+    /*width: 500px;*/
+    /*height: 35px;*/
+    height: 2.3em;
 }
 
 input, textarea, select{ 
@@ -147,8 +152,8 @@ input, textarea, select{
 }
 
 #loc-pin{
-    max-height: 100%;
-    width: 35px;
+    /*max-height: 100%;*/
+    width: 2.5em;
     background-color: #F2F2F2;
     display: flex;
     align-items: center;
@@ -171,7 +176,7 @@ input{
 }
 
 #search{
-    width: 100px;
+    width: 8em;
     background-color: rgb(0, 101, 252);
     color: white;
     margin-left: -4px;
@@ -179,8 +184,10 @@ input{
     border-bottom-right-radius: 10px;
 }
 
+/* Pourquoi mon bouton et mon champ de recherche ont un espace ?*/
+
 #town{
-    width: 175px;
+    width: 15em;
     padding-left: 10px;
     color: black;
 }
@@ -194,13 +201,12 @@ input{
 }
 
 
-/* Comment faire pour ne pas avoir d'espace entre mon champ de recherche et mon bouton ?*/
-
 
 /********* FILTRES CI-DESSOUS *********/
 
 #filtres{
     width: 70%;
+    margin: 1.5em 0 1.5em 0.25em;
 }
 
 #buttons{
@@ -208,38 +214,39 @@ input{
     flex-direction: row;
     justify-items: flex-start;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 #buttons p{
     margin: 0;
-    font-variation-settings: "wght" 600;
+    font-variation-settings: "wght" 700;
+    text-align: center;
 }
 
 .filtre_btn{
     display: flex;
     flex-direction: row;
-    height: 35px;
+    height: 2.8em;
     align-items: center;
     justify-content: start;
     border-radius: 45px;
     border: 2px solid lightgray;
     background-color: white;
     padding-left: 0px;
-    margin-left: 20px;
+    margin-left: 2em;
 }
 
 .filtre_btn p{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 1em 0 1em;
     font-family: 'raleway';
     font-variation-settings: "wght" 600;
 }
 
 .blue-picto{
     display: flex;
-    height: 35px;
-    width: 35px;
+    height: 2.8em;
+    width: 2.8em;
     margin-left: -2px;
     color: #0065FC;
     background-color: #DEEBFF;
@@ -249,67 +256,126 @@ input{
     justify-content: center;
 }
 
+#pin-info{
+    color: #0065FC;
+    width: 15px;
+    height: 15px;
+    padding-top: 1px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    font-size: 0.7em;
+    border : 1px solid lightgray;
+    border-radius: 90px;
+    text-align: center;
+    vertical-align: middle;
+}
 
 
-/********* MAIN CI-DESSOUS *********/
+
+
+/********* LOGEMENTS CI-DESSOUS *********/
+
+/*** ÉLÉMENTS GÉNÉRAUX ***/
 
 main{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    height: 550px;
+    height: 600px;
 }
 
 .lodgings{
     background-color: #F2F2F2;
-    height: 500px;
+    height: 100%;
 }
 
-#regular{
-    width: 66%;
-}
-
-#popular{
-    width: 31%;
+.container{
+    width: 90%;
+    height: 90%;
+    margin: auto;
 }
 
 .lodgings-overlook{
     display: flex;
-    margin: auto;
-    height: 100%;
-}
-
-.wrap{
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.column{
-    width: 80%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.lodgings-overlook p{
-    padding-left: 10px;
-    font-size: 0.8em;
+    width: 100%;
+    /*height: 90%;*/
 }
 
 .lodging-prev{
-    padding: 4px;
+    border: 4px solid white;
     background-color: white;
     display: flex;
     box-shadow: 1px 1px 15px lightgray;
 }
 
-.square{
-    height: 35%;
-    width: 27%;
+.lodging-prev__text{
+    display: flex;
     flex-direction: column;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.stars{
+    color: #0065FC;
+    /*padding-left: 10px;*/
+    /*padding-top: 10px;*/
+}
+
+.grey_star{
+    color: #d3d3d3;
+}
+
+
+/** ÉLÉMENTS SPÉCIFIQUES **/
+
+/* SECTION LOGEMENTS **/
+
+#general{
+    width: 66%;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 85%;
+}
+
+.square{
+    height: 38%;
+    width: 28%;
+    flex-direction: column;
+}
+
+.lodging-prev.square img{
+    width: 100%;
+    height: 60%;
+}
+
+.regular{
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+
+/* SECTION LOGEMENTS POPULAIRES **/
+
+#popular{
+    width: 31%;
+}
+
+#popular .container{
+    width: 80%;
+}
+
+.column{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
 }
 
 .rectangle{
@@ -318,82 +384,65 @@ main{
     flex-direction: row;
 }
 
-.lodging-prev.square img{
-    width: 100%;
-    height: 65%;
-}
-
-/*.lodging-square__image{
-    width: 100%;
-    height: 65%;
-}*/
-
 .lodging-prev.rectangle img{
     width: 40%;
     height: 100%;
 }
 
-/*.lodging-rectangle__image{
-    width: 40%;
-    height: 100%;
-}*/
+.popular{
+    width: 60%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
-/*.lodging-rectangle__image img{
-    object-position: 20% 30%;
-    box-sizing: border-box;
-    width: 100%;
-}*/
+.popular h3{
+    margin-bottom: 5%;
+}
 
-.stars{
-    color: #0065FC;
-    padding-left: 10px;
-    padding-top: 10px;
+.popular .stars{
+    padding-top: 23%;
 }
 
 #black_star{
     display: flex;
 }
 
-.grey_star{
-    color: #d3d3d3;
-}
-
-.texte_populaire{
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 5px;
-}
 
 
 
 /********* ACTIVITÉS CI-DESSOUS *********/
 
+#activities{
+    width: 100%;
+    margin-top: 5%;
+}
+
 #activities-overlook{
+    width: 100%;
     height:400px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    /*width: 100%;*/
+    align-content: space-between;
 }
 
 .activity-prev{
-    width: 22%;
+    width: 23%;
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 15px lightgray;
 }
 
 .activity-prev img{
-    height: calc(100% - 40px);
+    height: calc(100% - 3em);
 }
 
 .activity-prev h3{
-    line-height: 40px;
+    line-height: 3em;
     margin: 0 0 0 0;
-   vertical-align: middle;
+    vertical-align: middle;
+    padding-left: 20px;
 }
 
 .tall{
@@ -406,4 +455,33 @@ main{
 
 .small{
     height: 40%;
+}
+
+
+
+/********* FOOTER CI-DESSOUS *********/
+
+footer{
+    margin-top: 5%;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: inline;
+    justify-content: space-between;
+    align-items: right;
+    padding: 3% 23% 3% 3%;
+}
+
+.footer-overlook{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-items: space-around;
+}
+
+.footer-overlook h3{
+    padding-bottom: 1em;
+}
+
+.footer-overlook p{
+    line-height: 2em;
 }
