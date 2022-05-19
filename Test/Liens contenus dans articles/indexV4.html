@@ -2,7 +2,8 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="styleV3.css"/>
+        <link rel="stylesheet" href="normalize.css"/>
+        <link rel="stylesheet" href="styleV4.css"/>
         <title>Logements à Marseille</title>
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon_io/favicon.ico"/>
         <script src="https://kit.fontawesome.com/d0b8cf9251.js" crossorigin="anonymous"></script>
@@ -14,8 +15,8 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
                     </ul>
                 </nav>
             </div>
@@ -24,9 +25,7 @@
             <p>En plein centre-ville ou en pleine nature</p>
 
             <div id="search_bar">
-                <div id="loc-pin">
-                    <i class="fa-solid fa-location-dot fa-xs"></i>
-                </div>
+                <i class="fa-solid fa-location-dot fa-xs" id="loc-pin"></i>
                 <form>
                     <p>
                         <label for="search"></label>
@@ -78,13 +77,13 @@
             <section class="lodgings rounded" id="general">
                 <div class="container">
 
-                    <div class="heading">
-                        <h2>Hébergements à Marseille</h2>
-                    </div>
+                    <!-- <div class="heading" id="hebergements"> -->
+                        <h2 class="heading">Hébergements à Marseille</h2>
+                    <!-- </div> -->
 
                     <div class="lodgings-overlook wrap">
-                        <article class="lodging-prev square rounded">
-                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="rounded_top" alt="Photo Auberge La Cannebière">
+                        <article class="lodging-prev square rounded"><a href="#">
+                            <img src="images/hebergements/4_small/auberge-la-cannebiere.jpg" class="rounded_top" alt="Chambre bon marché dans une auberge située en plein centre">
                             <div class="lodging-prev__text regular">
                                 <h3>Auberge La Cannebière</h3>
                                 <p>Nuit à partir de 25€</p>
@@ -96,10 +95,10 @@
                                     <i class="fa-solid fa-star fa-xs grey_star"></i>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
 
-                        <article class="lodging-prev square rounded">
-                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="rounded_top" alt="Photo Hôtel du port">
+                        <article class="lodging-prev square rounded"><a href="#">
+                            <img src="images/hebergements/4_small/hotel-du-port.jpg" class="rounded_top" alt="Hôtel 3 étoiles situé à proximité directe du Vieux Port de Marseille">
                             <div class="lodging-prev__text regular">
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52€</p>
@@ -111,10 +110,10 @@
                                     <i class="fa-solid fa-star fa-xs"></i>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
 
-                        <article class="lodging-prev square rounded">
-                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="rounded_top" alt="Photo Hôtel les mouettes">
+                        <article class="lodging-prev square rounded"><a href="#">
+                            <img src="images/hebergements/4_small/hotel-les-mouettes.jpg" class="rounded_top" alt="Chambre coquette dans un hôtel proche du port">
                             <div class="lodging-prev__text regular">
                                 <h3>Hôtel les mouettes</h3>
                                 <p>Nuit à partir de 76€</p>
@@ -126,10 +125,10 @@
                                     <i class="fa-solid fa-star fa-xs grey_star"></i>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
 
-                        <article class="lodging-prev square rounded">
-                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="rounded_top" alt="Photo Hôtel de la mer">
+                        <article class="lodging-prev square rounded"><a href="#">
+                            <img src="images/hebergements/4_small/hotel-de-la-mer.jpg" class="rounded_top" alt="Hôtel aux chambres douillettes, avec vue sur la Mer Méditerranée ">
                             <div class="lodging-prev__text regular">
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46€</p>
@@ -141,10 +140,10 @@
                                     <i class="fa-solid fa-star fa-xs grey_star"></i>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
 
-                        <article class="lodging-prev square rounded">
-                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="rounded_top" alt="Photo Auberge Le Panier">
+                        <article class="lodging-prev square rounded"><a href="#">
+                            <img src="images/hebergements/4_small/auberge-le-panier.jpg" class="rounded_top" alt="Auberge de jeunesse en plein centre de Marseille. profitez de chambres aux tarifs accessibles dans une ambiance conviviale">
                             <div class="lodging-prev__text regular">
                                 <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de 23€</p>
@@ -156,10 +155,10 @@
                                     <i class="fa-solid fa-star fa-xs grey_star"></i>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
 
-                        <article class="lodging-prev square rounded">
-                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="rounded_top" alt="Photo Hôtel chez Amina">
+                        <article class="lodging-prev square rounded"><a href="#">
+                            <img src="images/hebergements/4_small/hotel-chez-amina.jpg" class="rounded_top" alt="Profitez d'un cadre authentique Chez Amina, entre accueil chaleureux et localisation idéale sur les hauteurs de la ville">
                             <div class="lodging-prev__text regular">
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 96€</p>
@@ -171,7 +170,7 @@
                                     <i class="fa-solid fa-star fa-xs"></i>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
                     </div>                    
             
                 </div>
@@ -185,14 +184,14 @@
 
                 <div class="container">
                     
-                    <div class= "heading">
+                    <div class= "heading"> <!-- Balise à appliquer : header-->
                         <h2>Les plus populaires</h2>
                         <i class="fa-solid fa-star fa-s" id="black_star"></i>
                     </div>
 
                     <div class="lodgings-overlook column">
-                        <article class="lodging-prev rectangle rounded">
-                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="rounded_left" alt="Photo Hôtel Le soleil du matin">
+                        <article class="lodging-prev rectangle rounded"><a href="#">
+                            <img src="images/hebergements/4_small/hotel-le-soleil-du-matin.jpg" class="rounded_left" alt="Réservez une chambre au style affirmé dans cet établissement arty du centre marseillais">
                             <div class="lodging-prev__text popular">                                
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
@@ -204,10 +203,10 @@
                                     <i class="fa-solid fa-star fa-xs"></i>
                                 </div>    
                             </div>
-                        </article>
+                        </a></article>
 
-                        <article class="lodging-prev rectangle rounded">
-                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="rounded_left" alt="Photo Au coeur de l'eau Chambres d'hôtes">
+                        <article class="lodging-prev rectangle rounded"><a href="#">
+                            <img src="images/hebergements/4_small/au-coeur-de-l'eau.jpg" class="rounded_left" alt="Chambre d'hôtes à proximité immédiate des Calanques qui vous plongera dans un cadre idyllique">
                             <div class="lodging-prev__text popular">
                                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p>Nuit à partir de 71€</p>
@@ -219,10 +218,10 @@
                                     <i class="fa-solid fa-star fa-xs grey_star"></i>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
 
-                        <article class="lodging-prev rectangle rounded">
-                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="rounded_left" alt="Photo Hôtel Tout bleu et Blanc">
+                        <article class="lodging-prev rectangle rounded"><a href="#">
+                            <img src="images/hebergements/4_small/hotel-tout-bleu-et-blanc.jpg" class="rounded_left" alt="Découvrez cet établissement donnant sur les hauteurs de Marseille et vous accueillant dans ses chambres confortables">
                             <div class="lodging-prev__text popular">
                                 <h3>Hôtel Tout bleu et Blanc</h3>
                                 <p>Nuit à partir de 68€</p>
@@ -234,7 +233,7 @@
                                     <i class="fa-solid fa-star fa-xs grey_star"></i>
                                 </div>
                             </div>
-                        </article>
+                        </a></article>
                     </div>
 
                 </div>
@@ -243,36 +242,36 @@
         </main>
 
         <section id="activities">
-            <h2 class="heading">Activités à Marseille</h2>
+            <h2 class="heading" id="activites">Activités à Marseille</h2>
 
             <div id="activities-overlook">
                 <article class="activity-prev tall rounded">
-                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="rounded_top" alt="Photo Vieux Port">
+                    <img src="images/activites/4_small/vieux-port.jpg" class="rounded_top" alt="Le Vieux Port, coeur de la cité phocéenne">
                         <h3>Vieux Port</h3>
                 </article>
 
                 <article class="activity-prev medium rounded">
-                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="rounded_top" alt="Photo Fort de Pomègues">
+                    <img src="images/activites/4_small/fort-pomegues.jpg" class="rounded_top" alt="Le Fort de Pomègues, lieu de culture et d'histoire">
                     <h3>Fort de Pomègues</h3>
                 </article>
 
                 <article class="activity-prev small rounded">
-                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="rounded_top" alt="Photo Iles du Frioul">
+                    <img src="images/activites/4_small/iles-du-frioul.jpg" class="rounded_top" alt="Les Îles du Frioul, bulle de calme et de nature pour souffler pendant votre périple">
                     <h3>Iles du Frioul</h3>
                 </article>
 
                 <article class="activity-prev tall rounded">
-                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="rounded_top" alt="Photo Parc National des Calanques">
+                    <img src="images/activites/4_small/calanques.jpg" class="rounded_top" alt="Les Calanques, toîle de fond de Marseille, majestueuses et enchanteresses">
                     <h3>Parc National des Calanques</h3>
                 </article>
 
                 <article class="activity-prev small rounded">
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="rounded_top" alt="Photo Notre-Dame-de-la-Garde">
+                    <img src="images/activites/4_small/notre-dame-de-la-garde.jpg" class="rounded_top" alt="Notre-Dame-de-la-Garde, gardienne éternelle de la cité phocéenne">
                     <h3>Notre-Dame-de-la-Garde</h3>
                 </article>
 
                 </a><article class="activity-prev medium rounded">
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="rounded_top" alt="Photo Parc Longchamp">
+                    <img src="images/activites/4_small/parc-longchamp.jpg" class="rounded_top" alt="Découvrez l'un des plus beaux poumons de Marseille avec le Parc Longchamp">
                     <h3>Parc Longchamp</h3>
                 </article>
             </div>

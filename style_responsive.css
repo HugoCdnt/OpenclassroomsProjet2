@@ -1,0 +1,178 @@
+@media screen and (max-width: 768px){
+	body{
+        width: 90%;
+        margin: auto;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #menu{
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        justify-items: center;
+        /*align-items: center;*/
+    }
+
+    #menu img{
+        height: 40px;
+        max-width: fit-content;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 0 10px 0;
+        border-top: 0;
+    }
+
+    nav ul li{
+        width: 50%;
+        border-top: 0;
+        padding: 0 0 10px 0;
+        border-bottom: 2px solid lightgray;
+    }
+
+    nav ul li:hover{
+        border-top: 0;
+        padding: 0 0 10px 0;
+        border-bottom: 2px solid blue;
+    }
+
+    h1, p{
+        width: 80%;
+    }
+
+    .search_bar{
+        width: 70%;
+        height: 2.3em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #loc-pin{
+        width: 2.5em;
+        font-size: 0.9em;
+        background-color: #F2F2F2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #search{
+        display: none;
+    }
+
+    #pin-loupe{
+        display: flex;
+        margin-left: -1em;
+        width: 2.5em;
+        font-size: 0.9em;
+        background-color: rgb(0, 101, 252);
+        color: white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+
+    /********* FILTRES CI-DESSOUS *********/
+
+#filtres{
+    width: 90%;
+    margin: 1.5em 0 1.5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#buttons{
+    display: flex;
+    flex-flow: row wrap;
+    /*align-items: center;*/
+    justify-content: left;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#buttons p{
+    margin: 0;
+    font-variation-settings: "wght" 700;
+    text-align: left; 
+}
+
+.filtre_btn{
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    align-items: center;
+    /*justify-content: start;*/
+    border-radius: 45px;
+    border: 2px solid lightgray;
+    background-color: white;
+    padding-left: 0px;
+    margin: 1em 1em 0em 0;
+    transition-duration: 0.4s;
+}
+
+.filtre_btn p{
+    padding: 0 1em 0 1em;
+    margin: 0;
+    font-family: 'raleway';
+    font-variation-settings: "wght" 600;
+}
+
+.filtre_btn:hover{
+    background-color: #0065FC;
+    color: #DEEBFF;
+    cursor: pointer;
+}
+
+/*.blue-picto{
+    display: flex;
+    height: 45px;
+    width: 60px;
+    margin-left: -2px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: none;
+    border-radius: inherit;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.green-picto{
+    /*box-sizing: content-box;*/
+    background-color: lime;
+    padding: 14px 16px;
+    border-radius: 45px;
+    margin-left: -2px;
+    margin-top: 1px;
+    font-size: 1.1em;
+}
+
+
+#pin-info{
+    color: #0065FC;
+    width: 15px;
+    height: 15px;
+    padding-top: 1px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    font-size: 0.7em;
+    border : 1px solid lightgray;
+    border-radius: 90px;
+    text-align: center;
+    vertical-align: middle;
+}
+}
