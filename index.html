@@ -4,7 +4,8 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="normalize.css"/>
         <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="style_responsive.css"/>
+        <link rel="stylesheet" href="style_responsive_mobile.css"/>
+        <link rel="stylesheet" href="style_responsive_tablette.css"/>
         <title>Logements à Marseille</title>
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon_io/favicon.ico"/>
         <script src="https://kit.fontawesome.com/d0b8cf9251.js" crossorigin="anonymous"></script>
@@ -12,8 +13,8 @@
     <body>
         <header>
             <div id="menu">
-                <img src="images/logo/Booki.png" alt="Logo de Booki">
-
+                <!-- <img src="images/logo/Booki.png" alt="Logo de Booki"> -->
+                <img src="images/logo/Booki@3x.png" alt="Logo de Booki">
                 <nav>
                     <ul>
                         <li><a href="#hebergements">Hébergements</a></li>
@@ -44,33 +45,66 @@
 
                 <p>Filtres</p>
 
-                <button class="filtre_btn">
+                <!-- <button class="filtre_btn">
                     <div class="blue-picto">
                         <i class="fa-solid fa-money-bill-wave"></i>
                     </div>
                     <p>Économique</p>
-                </button>
+                </button> -->
 
                 <button class="filtre_btn">
-                    <!-- <div class="blue-picto"> -->
-                    <i class="fa-solid fa-child-reaching green-picto"></i>
-                    <!-- </div> -->
+                    <span class="fa-stack">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-money-bill-wave fa-stack-1x"></i>
+                    </span> 
+                    <p>Économique</p>
+                </button>
+
+                <!-- <button class="filtre_btn">
+                    <div class="blue-picto">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>                    
+                    <p>Familial</p>
+                </button> -->
+
+                <button class="filtre_btn">
+                    <span class="fa-stack">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-child-reaching fa-stack-1x"></i>
+                    </span> 
                     <p>Familial</p>
                 </button>
 
-                <button class="filtre_btn">
+                <!-- <button class="filtre_btn">
                     <div class="blue-picto">
                         <i class="fa-solid fa-heart"></i>
-                    </div>
+                    </div>                    
+                    <p>Romantique</p>
+                </button> -->
+
+                <button class="filtre_btn">
+                    <span class="fa-stack">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-heart fa-stack-1x"></i>
+                    </span> 
                     <p>Romantique</p>
                 </button>
 
-                <button class="filtre_btn">
+                <!-- <button class="filtre_btn">
                     <div class="blue-picto">
                         <i class="fa-solid fa-dog"></i>
-                    </div>
+                    </div> 
+                    <p>Animaux autorisés</p>
+                </button> -->
+
+                <button class="filtre_btn">
+                    <span class="fa-stack">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-dog fa-stack-1x"></i>
+                    </span> 
                     <p>Animaux autorisés</p>
                 </button>
+
             </div>
 
             <p><i class="fa-solid fa-info" id="pin-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -175,12 +209,12 @@
                                 </div>
                             </div>
                         </a></article>
-                    </div>                    
-            
+                    </div>    
+
                 </div>
 
-                <p><a href="#">Afficher plus</a></p>
-                
+                <p class="wrapper"><a href="#">Afficher plus</a></p>
+
             </section>
 
             

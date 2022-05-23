@@ -13,6 +13,10 @@
         align-items: left;
     }
 
+    header img{
+        padding-top: 0;
+    }
+
     #menu{
         display: flex;
         flex-flow: column;

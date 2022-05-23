@@ -24,6 +24,7 @@ img{
     margin-top: 2em;
     margin-bottom: 1.2em;
     height: 5%;
+    width: 100%;
     font-size: 1.2em;
     justify-content: space-between;
     align-items: center;
@@ -95,8 +96,11 @@ header{
 
 header img{
     height: 40px;
-    object-fit: contain;
+    width: calc(285px / (135/40));
+    object-fit: cover;
     object-position: left;
+    margin-top: auto;
+    padding-top: 1.5%;
 }
 
 #menu{
@@ -106,6 +110,7 @@ header img{
     align-items: center;
     justify-content: space-between;
     padding-top: 2em;
+    margin-bottom: 1.5em;
 }
 
 
@@ -114,6 +119,8 @@ header img{
 ul{
     display: flex;
     flex-direction: row;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 ul li{
@@ -403,7 +410,7 @@ main .heading{
     justify-items: center;
 }
 
-#general p a{
+.wrapper{
     font-size: 0.9em;
     vertical-align: top;
     font-variation-settings: "wght" 700;
@@ -451,11 +458,15 @@ main .heading{
     height: 100%;
 }
 
+#popular .rounded_top{
+    border-top-right-radius: 0;
+}
+
 .popular{
     width: 60%;
     padding-right: 5%;
     padding-top: 5%;
-    padding-bottom: 5%;
+    /*padding-bottom: 5%;*/
 }
 
 .popular h3{
@@ -501,10 +512,14 @@ main .heading{
 }
 
 .activity-prev h3{
-    line-height: 3em;
+    /*line-height: 1.5em;*/
+    height: 3em;
     margin: 0 0 0 0;
-    vertical-align: middle;
+    width: 80%;
     padding-left: 20px;
+    padding-top: 10px;
+    /*padding: 1em 0 1em 20px;*/
+    overflow-wrap: break-word;
 }
 
 .tall{
