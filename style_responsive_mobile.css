@@ -162,19 +162,6 @@
         cursor: pointer;
     }
 
-    /*.blue-picto{
-        display: flex;
-        height: 45px;
-        width: 50px;
-        margin-left: -2px;
-        color: #0065FC;
-        background-color: #DEEBFF;
-        border: none;
-        border-radius: inherit;
-        align-items: center;
-        justify-content: center;
-    }*/
-
     .fa-stack{
         font-size: 23px;
         margin-top: 0;
