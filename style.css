@@ -20,7 +20,7 @@ img{
 
 .heading{
     display: flex;
-    flex-direction: inline;
+    flex-direction: row;
     margin-top: 2em;
     margin-bottom: 1.2em;
     height: 5%;
@@ -84,6 +84,9 @@ a{
     border-bottom-left-radius: 19px;
 }
 
+.margin-right{
+    margin-right: 20px;
+}
 
 
 /********* HEADER CI-DESSOUS *********/
@@ -103,7 +106,7 @@ header img{
     padding-top: 1.5%;
 }
 
-#menu{
+.menu{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -205,6 +208,10 @@ input{
     border: 1px solid rgb(0, 101, 252);
 }
 
+#search:hover{
+    cursor: pointer;
+}
+
 /* Pourquoi mon bouton et mon champ de recherche ont un espace ?*/
 
 #town{
@@ -224,85 +231,59 @@ input{
 
 /********* FILTRES CI-DESSOUS *********/
 
-#filtres{
+.filtres{
     width: 70%;
     margin: 1.5em 0 1.5em 0.25em;
 }
 
-#buttons{
+.buttons{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-items: flex-start;
     align-items: center;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-#buttons p{
-    margin: 0;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-variation-settings: "wght" 700;
-    text-align: center;
+    line-height: 60px;
 }
 
-.filtre_btn{
+/** BOUTONS **/
+
+.btn-filtre{
+    height: 45px;
     display: flex;
     flex-direction: row;
-    height: 46px;
     align-items: center;
-    justify-content: start;
-    border-radius: 45px;
-    border: 2px solid lightgray;
     background-color: white;
-    padding-left: 0px;
-    margin-left: 2em;
-    transition-duration: 0.4s;
+    border: 2px solid #d3d3d3;
+    border-radius: 25px;
+    padding-right: 15px;
+    font-variation-settings: "wght" 700;
+    font-size: 15px;
 }
 
-.filtre_btn p{
-    padding: 0 1em 0 0.5em;
-    font-family: 'raleway';
-    font-variation-settings: "wght" 600;
-}
-
-.filtre_btn:hover{
+.btn-filtre:hover{
     background-color: #0065FC;
     color: #DEEBFF;
+    transition-duration: 0.4s;
     cursor: pointer;
 }
 
-/*.blue-picto{
-    display: flex;
-    height: 2.8em;
-    width: 2.8em;
-    margin-left: -2px;
-    color: #0065FC;
+.blue-picto{
+    height: 45px;
+    width: 45px;
     background-color: #DEEBFF;
-    border: none;
-    border-radius: inherit;
-    align-items: center;
-    justify-content: center;
-}*/
-
-.fa-stack{
-    font-size: 23px;
-    margin-top: 0.5px;
+    color: rgb(0, 101, 252);
+    border-radius: 25px;
     margin-left: -8px;
-    vertical-align: middle;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10px;
 }
 
-.fa-circle{
-    color: #DEEBFF;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-}
-
-.fa-dog, .fa-heart, .fa-money-bill-wave, .fa-child-reaching{
-    color: #0065FC;
-    font-size: 0.8em;
-    text-align: center;
-}
 
 #pin-info{
     color: #0065FC;
@@ -345,9 +326,7 @@ main .heading{
     width: 100%;
     text-transform: none;
     text-decoration: none;
-    /*font-weight: initial;*/
     font-variation-settings: initial;
-    /*font-size: 0.9em;*/
     vertical-align: top;
 }
 
@@ -425,7 +404,7 @@ main .heading{
 }
 
 .regular{
-    width: 100%;
+    width: 94%;
     height: 40%;
     justify-content: space-evenly;
     justify-items: center;
@@ -587,9 +566,9 @@ footer{
     margin-top: 5%;
     background-color: #F2F2F2;
     display: flex;
-    flex-direction: inline;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: right;
+    align-items: flex-start;
     padding: 3% 23% 3% 3%;
 }
 
@@ -597,7 +576,6 @@ footer{
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-items: space-around;
 }
 
 .footer-overlook h3{

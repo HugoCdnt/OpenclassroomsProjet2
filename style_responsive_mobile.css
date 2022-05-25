@@ -10,14 +10,13 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        align-items: left;
     }
 
     header img{
         padding-top: 0;
     }
 
-    #menu{
+    .menu{
         display: flex;
         flex-flow: column;
         width: 100%;
@@ -25,7 +24,7 @@
         /*align-items: center;*/
     }
 
-    #menu img{
+    .menu img{
         height: 40px;
         max-width: fit-content;
     }
@@ -45,17 +44,28 @@
         width: 50%;
         border-top: 0;
         padding: 0 0 10px 0;
-        border-bottom: 2px solid lightgray;
+        border-bottom: 3px solid #F2F2F2;
     }
 
     nav ul li:hover{
         border-top: 0;
         padding: 0 0 10px 0;
-        border-bottom: 2px solid blue;
+        border-bottom: 3px solid rgb(0, 101, 252);
     }
 
-    #menu h1, #menu p, #filtres p{
-        width: 80%;
+    header h1{
+        width: 75%;
+        margin-left: 7.5%;
+    }
+    
+    /*header h1, */header p{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .filtres p{
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -67,10 +77,10 @@
     }
 
     .search-bar{
-        width: 80%;
+        width: 85%;
         margin: auto;
         margin-top: 1.5em;
-        margin-bottom: 1.5em;
+        margin-bottom: 10px;
         height: 2.3em;
         display: flex;
         flex-direction: row;
@@ -78,7 +88,7 @@
     }
 
     #loc-pin{
-        width: 2.5em;
+        width: 45px;
         font-size: 0.9em;
         background-color: #F2F2F2;
         display: flex;
@@ -88,9 +98,16 @@
         border-bottom-left-radius: 10px;
     }
 
+    .search-bar form{
+        width: 100%;
+    }
+
     .search-bar p{
-        width: 80%;
-        
+        width: 100%;
+    }
+
+    #town{
+        width: 100%;
     }
 
     #search{
@@ -100,7 +117,7 @@
     #pin-loupe{
         display: flex;
         margin-left: -1em;
-        width: 2.5em;
+        width: 45px;
         font-size: 0.9em;
         background-color: rgb(0, 101, 252);
         color: white;
@@ -112,76 +129,56 @@
 
     /********* FILTRES CI-DESSOUS *********/
 
-    #filtres{
+    .filtres{
         width: 85%;
-        margin-bottom: 1.5em;
         margin: auto;
         display: flex;
         flex-direction: column;
     }
 
-    #buttons{
+    .buttons{
+        width: 70%;
         display: flex;
         flex-flow: row wrap;
-        /*align-items: center;*/
-        justify-content: left;
+        justify-items: flex-start;
+        align-items: center;
+        align-content: center;
         margin-top: 0;
-        margin-bottom: 1.5em;
-    }
-
-    #buttons p{
-        margin: 0;
         font-variation-settings: "wght" 700;
-        text-align: left; 
+        line-height: 45px;
     }
 
-    .filtre_btn{
+    .btn-filtre{
+        height: 45px;
         display: flex;
         flex-direction: row;
-        height: 46px;
         align-items: center;
-        /*justify-content: start;*/
-        border-radius: 45px;
-        border: 2px solid lightgray;
         background-color: white;
-        padding-left: 0px;
-        margin: 1em 1em 0em 0;
-        transition-duration: 0.4s;
+        border: 2px solid #d3d3d3;
+        border-radius: 25px;
+        margin-bottom: 10px;
     }
 
-    .filtre_btn p{
-        padding: 0 1em 0 1em;
-        margin: 0;
-        font-family: 'raleway';
-        font-variation-settings: "wght" 600;
+    .btn-filtre p{
+    padding-left: 10px;
+    padding-right: 10px;
     }
 
-    .filtre_btn:hover{
-        background-color: #0065FC;
-        color: #DEEBFF;
-        cursor: pointer;
+    .blue-picto{
+        height: 45px;
+        min-width: 45px;
+        background-color: #DEEBFF;
+        color: rgb(0, 101, 252);
+        border-radius: 25px;
+        margin-left: -8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
     }
 
-    .fa-stack{
-        font-size: 23px;
-        margin-top: 0;
-        margin-left: -3px;
-        vertical-align: middle;
-        text-align: center;
-    }
 
-    .fa-circle{
-        color: #DEEBFF;
-        text-align: center;
-        height: 100%;
-        width: 100%;
-    }
-
-    .fa-dog, .fa-heart, .fa-money-bill-wave, .fa-child-reaching{
-        color: #0065FC;
-        font-size: 0.8em;
-        text-align: center;
-    }
+    
 
     #pin-info{
         color: #0065FC;
@@ -197,7 +194,7 @@
         vertical-align: middle;
     }
 
-    #filtres p{
+    .filtres p{
         margin-left: 0;
     }
 
@@ -218,7 +215,7 @@
     #popular{
         display: flex;
         align-items: flex-start;
-        flex: column;
+        flex-direction: column;
         width: 100%;
         height: 600px;
         border-radius: 0;
@@ -327,7 +324,9 @@
         height: 15%;
     }
 
-
+    .activity-prev:nth-child(6) img{
+        object-position: 0 -20px;
+    }
 
     /********* FOOTER CI-DESSOUS *********/
 
@@ -346,4 +345,3 @@
     }
 
 }
-

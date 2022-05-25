@@ -4,32 +4,6 @@
         width: 90%;
     }
 
-    #filtres{
-        width: 70%;
-        align-items: center;
-        margin-bottom: 0.5em;
-    }
-
-    #buttons{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        vertical-align: middle;
-        margin-bottom: 2em;
-        line-height: 4em;
-    }
-
-    .filtre_btn{
-        margin-right: 0;
-        margin-left: 0;
-        margin-right: 1em;
-    }
-
-    #buttons p{
-        margin-right: 0.5em;
-    }
-
-
 
     /********** SECTION LOGEMENTS **********/
 
@@ -50,7 +24,7 @@
     #popular{
         display: flex;
         align-items: flex-start;
-        flex: row;
+        flex-direction: row;
         width: 100%;
         height: 300px;
         border-radius: 0;
@@ -121,7 +95,7 @@
     }
 
     .popular h3{
-        margin-bottom: 0;
+        margin-bottom: 2%;
     }
 
     #popular .stars{
@@ -134,71 +108,6 @@
     #popular .heading{
         width: 50%;
     }
-
-
-
-
-
-    /*#popular{
-        display: flex;
-        align-items: flex-start;
-        flex: row;
-        width: 100%;
-        height: 250px;
-        border-radius: 0;
-        margin-bottom: 50px;
-    }
-
-    #popular .container{
-        width: 100%;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        /*flex-flow: row wrap;
-        flex-direction: column;
-    }
-
-    .column{
-        height: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-items: center;
-        align-items: flex-start;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-    .lodging-prev.rectangle{
-        width: 30%;
-        height: 70%;
-    }
-
-    #popular a{
-        height: 100%;
-        width: 100%;
-
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        text-transform: none;
-        text-decoration: none;
-        font-weight: initial;
-    }
-
-    .lodging-prev img{
-        height: 100%;
-        width: 20%;
-    }
-
-    .popular{
-        max-height: 100%;
-    }*/
-
-
 
 
     /********** SECTION LOGEMENTS POPULAIRES **********/
@@ -267,6 +176,18 @@
     .activity-prev img{
         height: calc(100% - 3em);
     }
+
+    .activity-prev:nth-child(3) img{
+        object-position: 0 -70px;
+    }
+
+    .activity-prev:nth-child(5) img{
+        object-position: 0 -30px;
+    }
+
+    .activity-prev:nth-child(6) img{
+        object-position: 0 -60px;
+    }
     
     /*.activity-prev h3{
         /*line-height: 3em;
@@ -305,9 +226,8 @@
         margin-top: 5%;
         background-color: #F2F2F2;
         display: flex;
-        flex-direction: inline;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: right;
         padding: 3% 10% 3% 10%;
     }
 
@@ -315,7 +235,6 @@
         display: flex;
         flex-direction: column;
         text-align: left;
-        justify-items: space-around;
     }
 
     .footer-overlook h3{
