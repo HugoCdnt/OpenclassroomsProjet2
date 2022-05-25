@@ -285,7 +285,7 @@ input{
 }
 
 
-#pin-info{
+.pin-info{
     color: #0065FC;
     width: 15px;
     height: 15px;
@@ -377,11 +377,11 @@ main .heading{
 
 /* SECTION LOGEMENTS **/
 
-#general{
+.general{
     width: 66%;
 }
 
-#general .container{
+.general .container{
     margin-bottom: 2em;
     height: 80%;
 }
@@ -419,16 +419,16 @@ main .heading{
 
 /* SECTION LOGEMENTS POPULAIRES **/
 
-#popular{
+.populars{
     width: 31%;
 }
 
-#popular .container{
+.populars .container{
     width: 80%;
     height: 83%;
 }
 
-#popular a{
+.populars a{
     display: flex;
     /*flex-direction: row;*/
     margin: 0;
@@ -458,7 +458,7 @@ main .heading{
     height: 100%;
 }
 
-#popular .rounded_top{
+.populars .rounded_top{
     border-top-right-radius: 0;
 }
 
@@ -480,7 +480,7 @@ main .heading{
     margin-top: auto;
 }
 
-#black_star{
+.black_star{
     display: flex;
 }
 
@@ -494,7 +494,7 @@ main .heading{
     margin-top: 5%;
 }
 
-#activities-overlook{
+.activities-overlook{
     width: 100%;
     height:400px;
     display: flex;
